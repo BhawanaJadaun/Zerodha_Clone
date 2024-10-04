@@ -1,0 +1,99 @@
+/* Global Styles */
+#supportHero {
+  background-color: rgb(56, 126, 209);
+}
+
+/* Wrapper for the support section */
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+/* Link styles within the supportHero */
+#supportHero a {
+  color: black;
+  text-decoration: none; /* Ensure links don't have underlines */
+}
+
+#supportHero a:hover {
+  text-decoration: underline; /* Add hover effect for clarity */
+}
+
+/* Input styles */
+#supportHero input {
+  padding: 15px 35px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* General link styles */
+a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Title and ordered list styles */
+.ol, h1 {
+  margin-left: 50px;
+}
+
+/* Search wrapper */
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Search input styles */
+.search-input {
+  width: 100%;
+  padding-left: 40px; /* Space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Search icon styles */
+.search-icon {
+  position: absolute;
+  right: 10px; 
+  top: 50%; /* Center the icon vertically */
+  transform: translateY(-50%);
+  font-size: 25px;
+  color: #aaa; 
+  pointer-events: none; /* Prevents clicking on the icon */
+}
+
+/* Wrapper link styles */
+#supportWrapper a {
+  display: block;
+  margin-bottom: 10px; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #supportWrapper {
+    margin: 0 20px; /* Adjust margins for smaller screens */
+    flex-direction: column; /* Stack the columns vertically */
+  }
+  
+  .search-input {
+    font-size: 16px; /* Slightly smaller font on smaller screens */
+  }
+
+  .ol {
+    list-style-type: none; /* Remove default list styles */
+    padding-left: 0; /* Remove padding */
+  }
+
+  .ol li {
+    margin-bottom: 0.5rem; /* Spacing between list items */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjusting title size */
+    margin-left: 0; /* Reset left margin for smaller screens */
+  }
+}
